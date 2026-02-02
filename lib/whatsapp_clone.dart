@@ -155,8 +155,14 @@ class _WhatsappCloneState extends State<WhatsappClone> {
                     borderRadius: BorderRadius.circular(20),
                   ),
                   leading: (index % 2 == 0)
-                      ? Image.asset('assets/images/WAC2.png')
-                      : Image.asset('assets/images/WAC1.png'),
+                      ? ClipRRect(
+                          borderRadius: BorderRadius.circular(50),
+                          child: Image.asset('assets/images/WAC2.png'),
+                        )
+                      : ClipRRect(
+                          borderRadius: BorderRadius.circular(50),
+                          child: Image.asset('assets/images/WAC1.png'),
+                        ),
                   title: Text(
                     'Contact ${(index + 1)}',
                     style: TextStyle(fontWeight: FontWeight.bold),
@@ -207,8 +213,14 @@ class _WhatsappCloneState extends State<WhatsappClone> {
                     borderRadius: BorderRadius.circular(20),
                   ),
                   leading: index % 2 == 0
-                      ? Image.asset('assets/images/WAC1.png')
-                      : Image.asset('assets/images/WAC2.png'),
+                      ? ClipRRect(
+                          borderRadius: BorderRadius.circular(50),
+                          child: Image.asset('assets/images/WAC1.png'),
+                        )
+                      : ClipRRect(
+                          borderRadius: BorderRadius.circular(50),
+                          child: Image.asset('assets/images/WAC2.png'),
+                        ),
                   title: Text(
                     'Contact ${(index + 1)}',
                     style: TextStyle(fontWeight: FontWeight.bold),
@@ -335,7 +347,10 @@ class _WhatsappCloneState extends State<WhatsappClone> {
                       ),
                       borderRadius: BorderRadius.circular(20),
                     ),
-                    leading: Image.asset('assets/images/WAC2.png'),
+                    leading: ClipRRect(
+                      borderRadius: BorderRadius.circular(50),
+                      child: Image.asset('assets/images/WAC2.png'),
+                    ),
                     title: Text(
                       'Contact ${(index + 1)}',
                       style: TextStyle(
@@ -363,7 +378,10 @@ class _WhatsappCloneState extends State<WhatsappClone> {
                       ),
                       borderRadius: BorderRadius.circular(20),
                     ),
-                    leading: Image.asset('assets/images/WAC2.png'),
+                    leading: ClipRRect(
+                      borderRadius: BorderRadius.circular(50),
+                      child: Image.asset('assets/images/WAC2.png'),
+                    ),
                     title: Text(
                       'Contact ${(index + 1)}',
                       style: TextStyle(

@@ -28,8 +28,14 @@ class _IndividProfState extends State<IndividProf> {
               icon: Icon(Icons.arrow_back),
             ),
             widget.i! % 2 == 0
-                ? Image.asset('assets/images/WAC2.png')
-                : Image.asset('assets/images/WAC1.png'),
+                ? ClipRRect(
+                    borderRadius: BorderRadius.circular(50),
+                    child: Image.asset('assets/images/WAC2.png'),
+                  )
+                : ClipRRect(
+                    borderRadius: BorderRadius.circular(50),
+                    child: Image.asset('assets/images/WAC1.png'),
+                  ),
           ],
         ),
 
